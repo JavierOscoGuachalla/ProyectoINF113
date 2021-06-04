@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body background="img/fondonegro1.jpg">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #2f00af;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://www.umsa.bo/">UMSA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">PRINCIPAL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ArticuloCompleto.html">MUSICA Y ARTICULOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contacto.html">CONTACTO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Productos.html">PRODUCTOS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              REDES SOCIALES
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="https://www.facebook.com/profile.php?id=100055683134809">FACEBOOK</a></li>
+              <li><a class="dropdown-item" href="https://chat.whatsapp.com/JhZOva9trrQ0Ens5srLasy">Whatsapp</a></li>
+              
+              <li><a class="dropdown-item" href="https://www.instagram.com/">Instagram</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            
+          </li>
+        </ul>
+        <form class="d-flex">
+          
+        </form>
+      </div>
+    </div>
+  </nav>
+  <br></br>
+
+  
+    <div class="container">
+        <h1 class="text-warning bg-dark">CONTACTO</h1>
+        <hr>
+        <form novalidate id="form" class="needs-validation" >
+            <div class="mb-3 text-warning bg-dark">
+              <label for="exampleInputEmail1" class="form-label" >Correo electronico</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+              <div id="emailHelp" class="form-text"></div>
+              <div class="valid-feedback text-warning bg-dark">
+                Dato correcto
+              </div>
+              <div class="invalid-feedback text-warning bg-dark">
+                Dato incorrecto
+              </div>
+            </div>
+            <div class="mb-3" text-warning bg-dark>
+              <label for="exampleInputPassword1" class="form-label text-warning bg-dark">Contraseña</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" required>
+              <div class="valid-feedback text-warning bg-dark">
+                Dato correcto
+              </div>
+              <div class="invalid-feedback text-warning bg-dark">
+                Dato incorrecto
+              </div>
+            </div>
+
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label text-warning bg-dark" for="exampleCheck1">Confirmar</label>
+            </div>
+            <div class="mb-3">
+              <label for="textarea" class="form-label text-warning bg-dark">Comentario:</label>
+              <textarea name="" id="textarea" class="form-control" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="formFile" class="form-label text-warning bg-dark">(Opcional a enviar)</label>
+              <input class="form-control" type="file" id="formFile">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </div>
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      form = document.getElementById("form");
+      form.onsubmit=function(e){
+        if(!form.checkValidity()){
+          e.preventDefault();
+          e.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }
+    </script>
+</body>
+</html>
